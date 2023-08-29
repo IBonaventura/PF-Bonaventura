@@ -1,0 +1,31 @@
+// Variables
+$color-gris-oscuro: #333; // Define el color gris oscuro
+
+// Estilos para el header
+header {
+  background-color: $color-gris-oscuro;
+  padding: 20px;
+  color: white; // Texto en color blanco para contraste
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+  li {
+    a {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

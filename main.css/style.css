@@ -1,0 +1,227 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  color: #fc8803;
+  background-color: #2b2c34;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la grilla y sus elementos */
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 100px;
+  gap: 1rem;
+  grid-template-areas:
+    "logo logo quien servicios"
+    "logo logo productos contacto";
+  justify-items: center;
+  align-items: center;
+  background-color: #2b2c34;
+  height: 100vh;
+  width: 100%;
+}
+
+.elemento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elemento:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  grid-area: logo;
+  background-color: #ef476f;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.quien,
+.servicios,
+.productos,
+.contacto {
+  grid-area: quien / contacto;
+  background-color: #f79a1f; /* quien */
+  background-color: #d3869b; /* servicios */
+  background-color: #ffdc00; /* productos */
+  background-color: #06d6a0; /* contacto */
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quien:hover,
+.servicios:hover,
+.productos:hover,
+.contacto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para botones */
+.button {
+  background-color: #d3869b;
+  color: #64075c;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #64075c;
+  color: #d3869b;
+  transform: scale(1.05);
+}
+
+/* Estilos para botones del header */
+.navbar-brand {
+  color: #ff6b6b;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  color: #64075c;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff6b6b;
+}
+
+/* Estilos para imágenes redondeadas */
+img {
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para botón de reserva */
+.btn-orange {
+  background-color: #ff6b6b;
+  color: #64075c;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #64075c;
+  color: #ff6b6b;
+  transform: scale(1.05);
+}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin-bottom: 30px;
+}
+.navbar {
+  background-color: #343a40;
+}
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Cambiar color al pasar el ratón */
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
+#map {
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.image-container img {
+  margin: 10px; 
+}
+/* Agrega un margen superior para centrar las imágenes */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+}
+
+/* Estilo para las imágenes en el contenedor */
+.image-container img {
+  margin: 10px; /* Agrega espacio entre las imágenes */
+}
+/* Estilo para el contenedor de la cuadrícula */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 20px; /* Espacio entre las imágenes */
+}
+
+/* Estilo para las imágenes en la cuadrícula */
+.grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

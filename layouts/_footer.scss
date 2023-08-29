@@ -1,0 +1,26 @@
+// Variables
+$color-gris-oscuro: #333;
+$altura-footer: 100px;
+
+// Estilos del footer
+footer {
+  background-color: $color-gris-oscuro;
+  color: white;
+  padding: 20px;
+  height: $altura-footer;
+  
+  // Ajustar estilos para enlaces en el footer
+  a {
+    color: white;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  // Alinear contenido en el centro
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

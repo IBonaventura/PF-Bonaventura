@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  color: #fc8803;
+  background-color: #2b2c34;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la grilla y sus elementos */
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 100px;
+  gap: 1rem;
+  grid-template-areas:
+    "logo logo quien servicios"
+    "logo logo productos contacto";
+  justify-items: center;
+  align-items: center;
+  background-color: #2b2c34;
+  height: 100vh;
+  width: 100%;
+}
+
+.elemento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.logo {
+  grid-area: logo;
+  background-color: #ef476f;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.quien,
+.servicios,
+.productos,
+.contacto {
+  grid-area: quien / contacto;
+  background-color: #f79a1f; // quien
+  background-color: #d3869b; // servicios
+  background-color: #ffdc00; // productos
+  background-color: #06d6a0; // contacto
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Estilos para botones */
+.button {
+  background-color: #d3869b;
+  color: #64075c;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: #64075c;
+    color: #d3869b;
+    transform: scale(1.05);
+  }
+}
+
+/* Resto de los estilos... */
